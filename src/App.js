@@ -22,7 +22,7 @@ export default function App(){
       setMensagem("Você um pouco acima do peso! Seu IMC: " + imc.toFixed(2))
     }
     else{
-      setMensagem("Você esta obeso! Seu IMC: " + imc.toFixed(2))
+      setMensagem("Cuidado! você está em estado de obesidade Seu IMC: " + imc.toFixed(2))
     }
   }
 
@@ -34,7 +34,7 @@ export default function App(){
       <div className="area-input">
         <input 
           type="text" 
-          placeholder="Peso em KG ex: 56"
+          placeholder="Peso em Kg ex: 56"
           value={peso}
           onChange={ (e) => setPeso(e.target.value)}
         />
